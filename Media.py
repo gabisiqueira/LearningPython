@@ -1,14 +1,11 @@
 notas = []
-contador = 0
-provas = float(input('Insira uma nota: '))
-notas.append(provas)
-while contador != 4:
-    provas = float(input('Insira uma nota: '))
-    notas.append(provas)
-    contador = contador + 1
-soma = 0
-k = 0
+k = 1
+while k <= 5:
+    notas.append(float(input('Insira a nota: ')))
+    k = k + 1
+soma = k = 0
 while k < len(notas):
     soma = soma + notas[k]
     k = k + 1
-print (soma/len(notas))
+print (f'A média do aluno é {soma/len(notas):.1f}.')
+
